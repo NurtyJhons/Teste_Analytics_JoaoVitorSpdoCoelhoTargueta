@@ -8,5 +8,8 @@ Se ao abrir o projeto e o arquivo "dataset_limpo" com os códigos apareceu junto
 
 Neste arquivo "dataset_limpo" com o código eu já deixei diversos e muitos comentários explicando código código, e o que fazer para ele funcionar. Mas resumindo, instale pacotes R com os comandos: install.packages("tidyverse"); install.packages("lubridate"), install.packages("dplyr"), install.packages("ggplot2"). Vai se guiando pelos meus comentários e rodando os códigos um por um com o atalho CTRL+ENTER.
 
-Para
+Agora, vamos para os arquivos SQL. Baixe o arquivo "dados_consultas.sql", que é um banco de dados que contém uma tabela já criada chamada "vendas", e essa tabela "vendas" como sabe é a importação do CSV limpo e pronto que foi feito no R. E então vá para seu software de banco de dados (Mysql Workbrench, por exemplo) e crie um banco de dados chamado "dados_consultas", e importe nele este arquivo "dados_consultas.sql". 
 
+Em seguida, baixe o arquivo "consultas_sql.sql". IMPORTANTE: Como sabe, este arquivo tem 2 códigos SQL diferentes pois é o que foi mandando fazer no exercicio. Mas eu testei a importação desse arquivo no banco de dados "dados_consultas.sql", e ele apenas executa, amostra e carrega o primeiro código do arquivo que é o código que lista o nome do produto, categoria, a soma total de vendas (Quantidade * Preço) para cada produto e ordena o resultado. Então, abra o bloco de notas, selecione nele para abrir todos os tipos de arquivos, abra este arquivo "consultas_sql.sql". Daí você também poderá ver o código que identifica os produtos que venderam menos no mês de junho de 2023, e também o copia e cola no prompt SQL.
+
+Por final, há o arquivo PDF "relatório_insights" que contém o relatório resumindo os principais insights encontrados e sugerindo possíveis ações baseadas nesses insights.
